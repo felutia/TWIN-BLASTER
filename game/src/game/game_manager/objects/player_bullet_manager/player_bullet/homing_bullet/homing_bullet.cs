@@ -1,3 +1,13 @@
+/*!
+ *  @file       homing_bullet.cs
+ *  @brief      ホーミング弾
+ *  @author     Riki Ito
+ *  @date       2015/03/19
+ *  @since      1.0
+ *
+ *  Copyright (c) 2014 2015, Riki Ito. All rights reserved.
+ */
+
 using System;
 using System.Collections.Generic;
 using Sce.PlayStation.Core;

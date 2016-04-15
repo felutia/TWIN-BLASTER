@@ -1,4 +1,13 @@
-
+/*!
+ *  @file       ds9.cs
+ *  @brief      ボス弾幕9
+ *  @author     Masaya Ichiki
+ *  @date       2015/03/19
+ *  @since      1.0
+ *
+ *  Copyright (c) 2014 2015, Riki Ito. All rights reserved.
+ */
+ 
 //謎
 
 

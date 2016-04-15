@@ -1,3 +1,13 @@
+/*!
+ *  @file       boss_Lv2.cs
+ *  @brief      ボスLv.2
+ *  @author     Riki Ito
+ *  @date       2015/03/19
+ *  @since      1.0
+ *
+ *  Copyright (c) 2014 2015, Riki Ito. All rights reserved.
+ */
+
 using System;
 using Sce.PlayStation.Core;
 

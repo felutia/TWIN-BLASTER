@@ -1,3 +1,13 @@
+/*!
+ *  @file       enemy_red_lv2.cs
+ *  @brief      エネミー赤Lv2
+ *  @author     Itiki Amano
+ *  @date       2015/03/19
+ *  @since      1.0
+ *
+ *  Copyright (c) 2014 2015, Riki Ito. All rights reserved.
+ */
+
 using System;
 using Sce.PlayStation.Core;
 

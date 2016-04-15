@@ -1,7 +1,7 @@
 
 /*!
  *  @file       enemy.cs
- *  @brief      敵
+ *  @brief      敵ベース
  *  @author     Riki Ito
  *  @date       2014/10/16
  *  @since      0.1.0

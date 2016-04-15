@@ -1,7 +1,7 @@
 /*!
  *  @file       masupa_effect.cs
  *  @brief      マスパエフェクト
- *  @author     Itiki Amno
+ *  @author     Itiki Amano
  *  @date       2015/01/19
  *  @since      1.0
  *

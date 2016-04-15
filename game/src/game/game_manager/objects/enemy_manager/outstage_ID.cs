@@ -1,3 +1,13 @@
+/*!
+ *  @file       outstage_ID.cs
+ *  @brief      画面内退出方法ID
+ *  @author     Riki Ito, Itiki Amano
+ *  @date       2015/03/19
+ *  @since      1.0
+ *
+ *  Copyright (c) 2014 2015, Riki Ito. All rights reserved.
+ */
+
 using System;
 
 namespace game
