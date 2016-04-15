@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07030580-73C0-428F-A977-24C7C0E43757}</ProjectGuid>
+    <ProjectTypeGuids>{69878862-DA7D-4DC6-B0A1-50D8FAB4242F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>aqua</RootNamespace>
+    <AssemblyName>aqua#</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <GenerateDocumentation>true</GenerateDocumentation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Sce.PlayStation.Core" />
+    <Reference Include="Sce.PlayStation.HighLevel.Model" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\game\" />
+    <Folder Include="src\graphics\" />
+    <Folder Include="src\utility\" />
+    <Folder Include="src\control\" />
+    <Folder Include="src\graphics\core\" />
+    <Folder Include="src\sound\" />
+    <Folder Include="resources\" />
+    <Folder Include="shaders\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\debug\Debug.cs" />
+    <Compile Include="src\game\Game.cs" />
+    <Compile Include="src\graphics\GraphicsContext.cs" />
+    <Compile Include="src\utility\Rect.cs" />
+    <Compile Include="src\graphics\Sprite.cs" />
+    <Compile Include="src\utility\EmbeddedFileLoader.cs" />
+    <Compile Include="src\utility\FrameTimer.cs" />
+    <Compile Include="src\utility\Size.cs" />
+    <Compile Include="src\control\Touch.cs" />
+    <Compile Include="src\utility\Random.cs" />
+    <Compile Include="src\control\GamePad.cs" />
+    <Compile Include="src\graphics\core\TextureManager.cs" />
+    <Compile Include="src\graphics\AlphaBlend.cs" />
+    <Compile Include="src\GameFramework.cs" />
+    <Compile Include="src\graphics\core\DrawObject.cs" />
+    <Compile Include="src\graphics\core\DrawObject2D.cs" />
+    <Compile Include="src\graphics\core\Camera.cs" />
+    <Compile Include="src\graphics\Camera2D.cs" />
+    <Compile Include="src\debug\DebugFont.cs" />
+    <Compile Include="src\sound\Sound.cs" />
+    <Compile Include="src\sound\Bgm.cs" />
+    <Compile Include="src\utility\FrameSync.cs" />
+    <Compile Include="src\debug\Performance.cs" />
+    <Compile Include="src\graphics\Color.cs" />
+    <Compile Include="src\graphics\Texture.cs" />
+    <Compile Include="src\graphics\core\DrawObject2DManager.cs" />
+    <Compile Include="src\graphics\core\DrawObject3D.cs" />
+    <Compile Include="src\graphics\core\DrawObject3DManager.cs" />
+    <Compile Include="src\graphics\Camera3D.cs" />
+    <Compile Include="src\graphics\Light.cs" />
+    <Compile Include="src\graphics\Material.cs" />
+    <Compile Include="src\graphics\Model.cs" />
+    <Compile Include="src\control\Motion.cs" />
+    <Compile Include="src\utility\File.cs" />
+    <Compile Include="src\utility\SaveData.cs" />
+    <Compile Include="src\graphics\core\DrawObjectID.cs" />
+    <Compile Include="src\graphics\core\SpriteManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="resources\debug_font.png" />
+    <EmbeddedResource Include="resources\white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedShaderProgram Include="shaders\sprite.fcg" />
+    <EmbeddedShaderProgram Include="shaders\sprite.vcg" />
+    <EmbeddedShaderProgram Include="shaders\sprite_batch.fcg" />
+    <EmbeddedShaderProgram Include="shaders\sprite_batch.vcg" />
+  </ItemGroup>
+</Project>
