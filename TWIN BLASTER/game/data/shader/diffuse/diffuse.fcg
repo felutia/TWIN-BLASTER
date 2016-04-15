@@ -1,0 +1,44 @@
+
+/*!
+ *  @file       diffuse.vcg
+ *  @brief      ディフューズフラグメントシェーダ
+ *  @author     Kazuya Maruyama
+ *  @date       2014/01/13
+ *  @since      0.2.1
+ *
+ *  Copyright (c) 2013, Kazuya Maruyama. All rights reserved.
+ */
+
+// BasicProgram標準のユニフォーム変数
+// これは必ず定義しなければならない
+uniform sampler2D   Texture0 : TEXUNIT0;
+uniform float3      FogColor;
+uniform bool        EnableLighting;
+uniform bool        EnableFog;
+uniform int         LightCount;
+uniform float4      FogVector;
+uniform float3      LightDirection[3];
+uniform float3      LightDiffuse[3];
+uniform float3      LightSpecular[3];
+uniform float3      LightAmbient;
+uniform float3      MaterialDiffuse;
+uniform float3      MaterialSpecular;
+uniform float3      MaterialAmbient;
+uniform float3      MaterialEmission;
+uniform float3      MaterialFactor;
+
+// 追加ユニフォーム変数
+uniform float4      OverDiffuse;
+
+/*
+ *  フラグメントシェーダ
+ */
+void
+main(   in  float2 v_TexCoord   : TEXCOORD0,
+        out float4 color        : COLOR
+        )
+{
+    float4 tex = tex2D( Texture0, v_TexCoord ) * float4( MaterialDiffuse, MaterialFactor.x ) * OverDiffuse;
+
+    color = tex;
+}

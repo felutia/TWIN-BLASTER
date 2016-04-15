@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application project_name="*" version="1.00" runtime_version="2.00" sdk_version="2.00.00" default_locale="ja-JP">
+  <app_xml_format version="1.00.00" sdk_type="PSM SDK" />
+  <name>
+    <localized_item locale="ja-JP" value="TWIN BLASTER" />
+  </name>
+  <short_name>
+    <localized_item locale="ja-JP" value="TWIN BLASTER" />
+  </short_name>
+  <parental_control lock_level="2" />
+  <rating_list highest_age_limit="3" has_online_features="false">
+    <online_features chat="false" personal_info="false" user_location="false" exchange_content="false" />
+    <rating type="ESRB" value="3" age="3" code="2zsBjAnUjWE3cNEhFTDsVogdNO4fzeRBq2rH/rmx3lY=" />
+    <rating type="PEGIEX" value="3" age="3" code="7377" />
+    <rating type="SELF" value="3" age="3" />
+  </rating_list>
+  <images icon_128x128="data\icon\psm_icon128x128.png" icon_256x256="data\icon\psm_icon256x256.png" icon_512x512="data\icon\psm_icon512x512.png" splash_854x480="data\icon\ps_vita_splash.png" />
+  <genre_list>
+    <genre value="Games:Shooter" />
+    <genre value="Games:Arcade" />
+  </genre_list>
+  <developer>
+    <name value="" />
+  </developer>
+  <website href="" />
+  <copyright author="" />
+  <purchase>
+    <product_list />
+  </purchase>
+  <runtime_config>
+    <memory managed_heap_size="32768" resource_heap_size="65536" />
+    <display max_screen_size="1280x800" />
+    <camera max_capture_resolution="800x600" />
+  </runtime_config>
+  <feature_list>
+    <feature value="GamePad" />
+    <feature value="##SDKType:PSM SDK" />
+  </feature_list>
+  <psn_service_list />
+</application>
